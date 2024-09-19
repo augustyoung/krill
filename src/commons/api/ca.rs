@@ -2360,7 +2360,7 @@ mod test {
     }
 
     fn rrdp_uri() -> uri::Https {
-        test::https("https://localhost/rrdp/notification.xml")
+        test::https("https://localhost/rrdp/oshirase.xml")
     }
 
     fn info() -> RepoInfo {
@@ -2406,7 +2406,7 @@ mod test {
     fn serialize_deserialize_repo_info() {
         let info = RepoInfo::new(
             test::rsync("rsync://some/module/folder/"),
-            Some(test::https("https://host/notification.xml")),
+            Some(test::https("https://host/oshirase.xml")),
         );
 
         let json = serde_json::to_string(&info).unwrap();
