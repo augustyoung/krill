@@ -1761,12 +1761,12 @@ impl RrdpServer {
 /// rrdp paths and uris
 impl RrdpServer {
     pub fn notification_uri(&self) -> uri::Https {
-        self.rrdp_base_uri.join(b"notification.xml").unwrap()
+        self.rrdp_base_uri.join(b"oshirase.xml").unwrap()
     }
 
     fn notification_path_new(&self) -> PathBuf {
         let mut path = self.rrdp_base_dir.clone();
-        path.push("new-notification.xml");
+        path.push("new-oshirase.xml");
         path
     }
 
