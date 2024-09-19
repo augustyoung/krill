@@ -101,7 +101,7 @@ mod tests {
                 let repo_info = RepoInfo::new(
                     test::rsync("rsync://example.krill.cloud/repo/"),
                     Some(test::https(
-                        "https://exmple.krill.cloud/repo/notification.xml",
+                        "https://exmple.krill.cloud/repo/oshirase.xml",
                     )),
                 );
                 let repo_key_id = signer.create_key().unwrap();
