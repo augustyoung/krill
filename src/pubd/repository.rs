@@ -1772,7 +1772,7 @@ impl RrdpServer {
 
     fn notification_path(&self) -> PathBuf {
         let mut path = self.rrdp_base_dir.clone();
-        path.push("notification.xml");
+        path.push("oshirase.xml");
         path
     }
 
@@ -2152,7 +2152,7 @@ impl RepositoryAccess {
     }
 
     fn notification_uri(&self) -> uri::Https {
-        self.rrdp_base.join(b"notification.xml").unwrap()
+        self.rrdp_base.join(b"oshirase.xml").unwrap()
     }
 
     fn base_uri_for(
