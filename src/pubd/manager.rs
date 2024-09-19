@@ -873,7 +873,7 @@ mod tests {
 
         for entry in fs::read_dir(&rrdp_dir).unwrap() {
             let entry = entry.unwrap();
-            if entry.file_name().to_string_lossy() != "notification.xml" {
+            if entry.file_name().to_string_lossy() != "oshirase.xml" {
                 return entry.path();
             }
         }
