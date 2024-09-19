@@ -2571,7 +2571,7 @@ async fn rrdp(req: Request) -> RoutingResult {
     } else {
         let mut full_path: PathBuf = req.state.rrdp_base_path();
         let (_, path) = req.path.remaining().split_at(1);
-        let cache_seconds = if path.ends_with("notification.xml") {
+        let cache_seconds = if path.ends_with("oshirase.xml") {
             60
         } else {
             86400
